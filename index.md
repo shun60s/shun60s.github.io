@@ -1,37 +1,58 @@
-## Welcome to GitHub Pages
+# spectrum
+A practice of making mel spectrogram, CNN autoencode pre-training, and classifier by deep learning
+## Usage
+1.making mel spectrogram
 
-You can use the [editor on GitHub](https://github.com/shun60s/shun60s.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Download the english number 0-9 speech data,  <http://pannous.net/files/spoken_numbers_wav.tar>  
+(See Description of Data in <https://github.com/AKBoles/Deep-Learning-Speech-Recognition/blob/master/Pannous-Walkthrough.md> )  
+and move wav files to wav directory. Steffi were removed due to it may soemthing wrong. 
+```
+python make_spectrogram.py
+```
+Mel scale of FFT size, shift size, bands number, max-min frequecny are adjustable at class GetSpecgram __init__  
+Some input wav file of slow utterance (xxx40 <=) or fast utterance (xxx260 >=)  were rejected  
+spectrogram.zip is an example of output spectrogram directory.  
+![sample](https://user-images.githubusercontent.com/36104188/36091873-a86aed28-1028-11e8-8e60-0b8a2853c15e.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+2.making DataSet  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+each data and label for classifier and autoencoder   
+```
+python make_dataset.py
+```
+  
 
-```markdown
-Syntax highlighted code block
+3.classifier by deep learning framework Chainer
 
-# Header 1
-## Header 2
-### Header 3
+ two cnn layers model  
+```
+python cnn_classifier1-2cnn.py
+```
+![sample](https://user-images.githubusercontent.com/36104188/36150172-24283bb8-1106-11e8-9bb4-8cccb62466b7.png)
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+ three cnn layers model  
+```
+python cnn_classifier1-3cnn.py
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+4. CNN-Autoencoder by deep learning framework Chainer  
+Customized chainer extensions of Updater, Evaluator, and plot_figure are used.  
+input->encoder-> decoder ->output   
+```
+python cnn_autoencoder1.py
+```
+![sample](https://user-images.githubusercontent.com/36104188/36150167-20d228f2-1106-11e8-9d68-f0a2b217f112.png)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shun60s/shun60s.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
+## License
+ Regarding to melbank.py, follow the license wrtten in the content.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Disclaimer
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL 
+THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, 
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
