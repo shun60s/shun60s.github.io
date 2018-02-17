@@ -1,37 +1,28 @@
-## Welcome to GitHub Pages
+ディープラーニングと　オーディオや音声の信号処理に関連するレポジトリです。  
+These are some repositories of deep learning, audio/speech signal processing.  
 
-You can use the [editor on GitHub](https://github.com/shun60s/shun60s.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+## chainer-notch-filter  
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+ノッチフィルタをディープラーニングで学習できるかどうか試してみた。  
+A study of design iir notch filter by deep learning framework chainer  
 
-### Markdown
+[link](https://github.com/shun60s/chainer-notch-filter)  
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## FFT-Wav-UpSampling  
 
-# Header 1
-## Header 2
-### Header 3
+FFT法を使って　音楽などのWAVファイルのサンプリング周波数を2倍にする。  
+A converter of audio wav file samplimg rate to 2 times by FFT method  
 
-- Bulleted
-- List
+[link](https://github.com/shun60s/FFT-Wav-UpSampling)  
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+## spectrum  
 
-[Link](url) and ![Image](src)
-```
+メル尺度のスぺクトログラムの作成、オートエンコーダによる事前学習、などの学習練習用に作りました。  
+A practice of making mel spectrogram, CNN autoencode pre-training, and classifier by deep learning 
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+[link](https://github.com/shun60s/spectrum)  
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/shun60s/shun60s.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
