@@ -75,5 +75,10 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
  </url>
+ <url>
+  <loc>https://shun60s.github.io/Vocal-Tube-N-Model/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+ </url>
 </urlset>
 
