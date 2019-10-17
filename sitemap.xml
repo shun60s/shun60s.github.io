@@ -90,13 +90,16 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
  </url>
-
  <url>
   <loc>https://shun60s.github.io/Voice-BPF-bank/</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
  </url>
-
+ <url>
+  <loc>https://shun60s.github.io/rt-wdf_renderer-sample-study/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+ </url>
 </urlset>
 
 
