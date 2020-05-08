@@ -100,6 +100,17 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
  </url>
+ <url>
+  <loc>https://shun60s.github.io/Harmonic/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+ </url>
+ <url>
+  <loc>https://shun60s.github.io/Chebyshev-expansion/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+ </url>
+
 </urlset>
 
 
