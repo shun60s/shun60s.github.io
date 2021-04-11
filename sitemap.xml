@@ -79,11 +79,11 @@
   <loc>https://shun60s.github.io/Vocal-Tube-I-Model/</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
+ </url>
  <url>
   <loc>https://shun60s.github.io/glottal-source-spectrum/</loc>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
- </url>
  </url>
  <url>
   <loc>https://shun60s.github.io/Vocal-Tube-Estimation/</loc>
