@@ -125,12 +125,6 @@
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
  </url>
-  <url>
-  <loc>https://github.com/shun60s/misc-tools/tree/master/Riemann_Zeta_piecewise_quadrature</loc>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
- </url>
- 
 </urlset>
 
 
